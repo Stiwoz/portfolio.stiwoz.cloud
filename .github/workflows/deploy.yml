@@ -28,7 +28,8 @@ jobs:
       env:
         CI: true
 
-    - run: cat /home/runner/.npm/_logs/*.log
+    - name: Debug
+      run: cat /home/runner/.npm/_logs/*.log 
 
     - name: 📂 Sync files
       uses: Stiwoz/git-sftp-action@master
