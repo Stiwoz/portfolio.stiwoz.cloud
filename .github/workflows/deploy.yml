@@ -13,6 +13,7 @@ jobs:
       matrix:
         node-version: ['lts/*']
     steps:
+      
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
       with:
@@ -22,9 +23,15 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 'lts/*'
-    - run: node -v && npm -v
-    - run: npm install -g yarn next
-    - run: yarn install && yarn export
+      
+    - name: Install yarn and next
+      run: npm install -g yarn next
+
+    - name: Install dependancies
+      run: yarn install && yarn export
+
+    - name: Build Next app
+      run: yarn export
       env:
         CI: true
 
