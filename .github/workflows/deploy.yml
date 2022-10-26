@@ -8,6 +8,7 @@ jobs:
   SFTP-Deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
+    continue-on-error: true
     strategy:
       matrix:
         node-version: ['18.12.0']
@@ -31,13 +32,13 @@ jobs:
     - name: Debug
       run: cat /home/runner/.npm/_logs/*.log 
 
-    - name: 📂 Sync files
-      uses: Stiwoz/git-sftp-action@master
-      with:
-        username: ${{ secrets.USERNAME }}
-        server: ${{ secrets.HOST }}
-        ssh_private_key: ${{ secrets.SSH_KEY }}
-        local_path: './out/*'
-        remote_path: ${{ secrets.PATH }}
-        port: 22
-        args: '-o ConnectTimeout=30'
+    # - name: 📂 Sync files
+    #   uses: Stiwoz/git-sftp-action@master
+    #   with:
+    #     username: ${{ secrets.USERNAME }}
+    #     server: ${{ secrets.HOST }}
+    #     ssh_private_key: ${{ secrets.SSH_KEY }}
+    #     local_path: './out/*'
+    #     remote_path: ${{ secrets.PATH }}
+    #     port: 22
+    #     args: '-o ConnectTimeout=30'
