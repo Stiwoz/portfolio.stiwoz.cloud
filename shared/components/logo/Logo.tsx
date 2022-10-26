@@ -7,7 +7,7 @@ const Logo: FC<LogoProps> = () => {
   return (
     <svg
       id="Layer_1"
-      enable-background="new 0 0 511.96 511.96"
+      enableBackground="new 0 0 511.96 511.96"
       viewBox="0 0 511.96 511.96"
       xmlns="http://www.w3.org/2000/svg"
     >
