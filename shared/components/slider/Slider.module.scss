@@ -31,3 +31,10 @@
 		text-transform: uppercase;
 	}
 }
+
+.Main{
+	flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+	height: 100%;
+}
