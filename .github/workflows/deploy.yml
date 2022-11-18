@@ -28,7 +28,7 @@ jobs:
       run: npm install
 
     - name: Build Next app
-      run: yarn export
+      run: npm run export
       env:
         CI: true
 
