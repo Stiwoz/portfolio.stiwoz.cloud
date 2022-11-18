@@ -8,7 +8,7 @@ const Slide: FC = () => {
       <section className={styles.Slide} data-state="active">
         <div
           className={styles.Image}
-          style={{ backgroundImage: "url('http://picsum.photos/800/350')" }}
+          style={{ backgroundImage: "url('https://picsum.photos/800/350')" }}
         ></div>
         <div className={styles.Content}>
           <h3 className={styles.Subtitle}>Titolo della descrizione</h3>
