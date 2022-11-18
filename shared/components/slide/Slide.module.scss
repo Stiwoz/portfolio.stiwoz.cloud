@@ -36,3 +36,46 @@
 		transition: none;
 	}
 }
+
+.Image{
+	background-size: cover;
+	background-position: center;
+	border-bottom: 1px solid var(--border-color);
+}
+
+.Title{
+	padding: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: stretch;
+}
+
+.Content{
+	border-left: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color);
+	padding: 2rem;
+
+	h3{
+		margin-top: 0;
+	}
+}
+
+.Text{
+	margin-top: 2rem;
+}
+
+.Buttons{
+	flex: 1 1 auto;
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.Button{
+	appearance: none;
+	border: 0 none;
+	border-left: 1px solid var(--border-color);
+	font-size: 2rem;
+	color: var(--color-light);
+	cursor: pointer;
+	background-color: var(--color-dark);
+}

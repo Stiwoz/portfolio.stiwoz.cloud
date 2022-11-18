@@ -6,10 +6,13 @@ const Slide: FC = () => {
   return (
     <>
       <section className={styles.Slide} data-state="active">
-        <div className={styles.image}>img</div>
-        <div className={styles.content}>
-          <h3 className={styles.Subtitle}>Slide 1</h3>
-          <p className={styles.Content}>
+        <div
+          className={styles.Image}
+          style={{ backgroundImage: "url('http://picsum.photos/800/350')" }}
+        ></div>
+        <div className={styles.Content}>
+          <h3 className={styles.Subtitle}>Titolo della descrizione</h3>
+          <p className={styles.Text}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             voluptatum, quod, quia, voluptas quae voluptatem quibusdam
             consequuntur voluptates quos natus quas. Quisquam, quae. Quisquam
@@ -18,13 +21,23 @@ const Slide: FC = () => {
             quia, voluptas quae voluptatem quibusdam consequuntur voluptates
             quos natus quas. Quisquam, quae.
           </p>
+
+          <div className={styles.Text}>
+            Tecnologie utilizzate:
+            <ul>
+              <li>Next.js</li>
+              <li>React</li>
+              <li>Typescript</li>
+              <li>SCSS</li>
+            </ul>
+          </div>
         </div>
         <div className={styles.Title}>
-          <h2>Slide 1</h2>
+          <h2>Nome del progetto in showcase</h2>
         </div>
-        <div className={styles.Commands}>
-          <button className={styles.Command}>Prev</button>
-          <button className={styles.Command}>Next</button>
+        <div className={styles.Buttons}>
+          <button className={styles.Button}>&larr;</button>
+          <button className={styles.Button}>&rarr;</button>
         </div>
       </section>
     </>
