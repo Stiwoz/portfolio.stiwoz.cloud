@@ -8,10 +8,7 @@ jobs:
   SFTP-Deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
-    continue-on-error: true
-    strategy:
-      matrix:
-        node-version: ['lts/*']
+    continue-on-error: false
     steps:
       
     - name: 🚚 Get latest code
