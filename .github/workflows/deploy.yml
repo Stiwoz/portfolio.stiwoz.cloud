@@ -25,10 +25,10 @@ jobs:
         cache: 'npm'
 
     - name: Install dependancies
-      run: /opt/hostedtoolcache/node/18.12.0/x64/bin/npm install
+      run: npm install
 
     - name: Build Next app
-      run: /opt/hostedtoolcache/node/18.12.0/x64/bin/npm run export
+      run: npm run export
       env:
         CI: true
 
