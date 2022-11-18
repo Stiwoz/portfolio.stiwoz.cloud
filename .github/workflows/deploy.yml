@@ -27,7 +27,7 @@ jobs:
         cache: 'npm'
 
     - name: Install dependancies
-      run: pwd && npm install && npm run export
+      run: npm install
 
     - name: Build Next app
       run: npm run export
