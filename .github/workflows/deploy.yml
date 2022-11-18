@@ -23,12 +23,9 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 'lts/*'
-      
-    - name: Install yarn and next
-      run: npm install -g yarn next
 
     - name: Install dependancies
-      run: yarn install && yarn export
+      run: npm install
 
     - name: Build Next app
       run: yarn export
