@@ -23,6 +23,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 'lts/*'
+        cache: 'npm'
 
     - name: Install dependancies
       run: pwd && npm install && npm run export
